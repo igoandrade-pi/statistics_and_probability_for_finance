@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Lab 1 Comandos básicos para programação com R | Estattśitica e Probabilidade para Finanças</title>
-  <meta name="description" content="Lab 1 Comandos básicos para programação com R | Estattśitica e Probabilidade para Finanças" />
+  <title>Lab 1 Comandos básicos para programação com R | Estatística e Probabilidade para Finanças</title>
+  <meta name="description" content="Lab 1 Comandos básicos para programação com R | Estatística e Probabilidade para Finanças" />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Lab 1 Comandos básicos para programação com R | Estattśitica e Probabilidade para Finanças" />
+  <meta property="og:title" content="Lab 1 Comandos básicos para programação com R | Estatística e Probabilidade para Finanças" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Lab 1 Comandos básicos para programação com R | Estattśitica e Probabilidade para Finanças" />
+  <meta name="twitter:title" content="Lab 1 Comandos básicos para programação com R | Estatística e Probabilidade para Finanças" />
   
   
   
@@ -137,7 +137,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">SHORT TITLE HERE</a></li>
+<li><a href="./">Estatística e Probabilidade para Finanças</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Informações preliminares</a></li>
@@ -163,7 +163,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Estattśitica e Probabilidade para Finanças</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Estatística e Probabilidade para Finanças</a>
           </h1>
         </div>
 
@@ -370,15 +370,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb53-5"><a href="comandos-básicos-para-programação-com-r.html#cb53-5" aria-hidden="true" tabindex="-1"></a>eps <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">201</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span>
 <span id="cb53-6"><a href="comandos-básicos-para-programação-com-r.html#cb53-6" aria-hidden="true" tabindex="-1"></a>Y <span class="ot">&lt;-</span> beta_0 <span class="sc">+</span> beta_1 <span class="sc">*</span> X</span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
-<li>Traçar os valores simulados.
-<strong>Resp.:</strong></li>
+<li>Traçar os valores simulados.</li>
 </ol>
+<p><strong>Resp.:</strong></p>
 <div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="comandos-básicos-para-programação-com-r.html#cb54-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(X, Y, eps)</span>
 <span id="cb54-2"><a href="comandos-básicos-para-programação-com-r.html#cb54-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb54-3"><a href="comandos-básicos-para-programação-com-r.html#cb54-3" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb54-4"><a href="comandos-básicos-para-programação-com-r.html#cb54-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb54-5"><a href="comandos-básicos-para-programação-com-r.html#cb54-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x=</span>X, <span class="at">y=</span>Y), <span class="at">colour=</span><span class="st">&quot;blue&quot;</span>)<span class="sc">+</span></span>
-<span id="cb54-6"><a href="comandos-básicos-para-programação-com-r.html#cb54-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>X, <span class="at">y=</span>Y<span class="sc">+</span>eps))</span></code></pre></div>
+<span id="cb54-6"><a href="comandos-básicos-para-programação-com-r.html#cb54-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>X, <span class="at">y=</span>Y<span class="sc">+</span>eps)) <span class="sc">+</span></span>
+<span id="cb54-7"><a href="comandos-básicos-para-programação-com-r.html#cb54-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_bw</span>()</span></code></pre></div>
 <p><img src="main_files/figure-html/unnamed-chunk-26-1.png" width="672"  /></p>
 
 </div>

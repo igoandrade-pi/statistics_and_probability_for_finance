@@ -226,6 +226,7 @@ Y <- beta_0 + beta_1 * X
 
 
 2. Traçar os valores simulados.
+
   **Resp.:**
 ```{r}
 df <- data.frame(X, Y, eps)
@@ -233,7 +234,8 @@ df <- data.frame(X, Y, eps)
 df %>%
   ggplot() +
     geom_line(aes(x=X, y=Y), colour="blue")+
-    geom_point(aes(x=X, y=Y+eps))
+    geom_point(aes(x=X, y=Y+eps)) +
+    theme_bw()
 ```
 
 

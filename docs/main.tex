@@ -146,12 +146,12 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={Estattśitica e Probabilidade para Finanças},
+  pdftitle={Estatística e Probabilidade para Finanças},
   pdfauthor={Igo da Costa Andrade},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Estattśitica e Probabilidade para Finanças}
+\title{Estatística e Probabilidade para Finanças}
 \author{Igo da Costa Andrade}
 \date{2023-06-06}
 
@@ -670,8 +670,9 @@ onde \(\beta_0 = 2\), \(\beta_1 = 0,3\) e \(\varepsilon\) é uma distribuição 
 \tightlist
 \item
   Traçar os valores simulados.
-  \textbf{Resp.:}
 \end{enumerate}
+
+\textbf{Resp.:}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -680,7 +681,8 @@ onde \(\beta_0 = 2\), \(\beta_1 = 0,3\) e \(\varepsilon\) é uma distribuição 
 \NormalTok{df }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
     \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{X, }\AttributeTok{y=}\NormalTok{Y), }\AttributeTok{colour=}\StringTok{"blue"}\NormalTok{)}\SpecialCharTok{+}
-    \FunctionTok{geom\_point}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{X, }\AttributeTok{y=}\NormalTok{Y}\SpecialCharTok{+}\NormalTok{eps))}
+    \FunctionTok{geom\_point}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{X, }\AttributeTok{y=}\NormalTok{Y}\SpecialCharTok{+}\NormalTok{eps)) }\SpecialCharTok{+}
+    \FunctionTok{theme\_bw}\NormalTok{()}
 \end{Highlighting}
 \end{Shaded}
 
