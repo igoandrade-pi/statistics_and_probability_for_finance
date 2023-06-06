@@ -1,6 +1,6 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "Estattśitica e Probabilidade para Finanças"
+author: "Igo da Costa Andrade"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 #documentclass: memoir
@@ -13,5 +13,7 @@ output:
 
 \newpage
 # Informações preliminares {-}
+
+Resolução dos laboratórios `R` do curso **_Statistics and Probability for Economics and Finance_ (SPEF)** ([https://bookdown.org/michela_cameletti/spef2223rlabs/](https://bookdown.org/michela_cameletti/spef2223rlabs/)) ministrado por ministrado pelo Prof. Raffaele Argiento, Prof. Michela Cameletti e Prof. Tommaso Lando da University of Bergamo.
 
 

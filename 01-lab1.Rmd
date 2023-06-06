@@ -1,0 +1,12 @@
+# Comandos básicos para programação com `R`
+
+## Laboratório de Exercícios 1
+
+### Exercício 1
+
+1. Calcule $exp\left(3 - \dfrac{4}{5}\right) + \dfrac{\sqrt{3 + 2^5}}{4 - 7 \cdot \log{(10)}}$.
+
+2. Crie o vetor chamado `x` que contém os seguintes valores $\left(10, \log{(0,2)}, 6/7, \sqrt{(54)}, -0,124\right)$.
+
+  * Encontre o comprimento de `x`.
+
