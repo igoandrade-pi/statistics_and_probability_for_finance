@@ -1,5 +1,5 @@
 --- 
-title: "Estattśitica e Probabilidade para Finanças"
+title: "Estatística e Probabilidade para Finanças"
 author: "Igo da Costa Andrade"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
