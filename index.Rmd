@@ -11,6 +11,21 @@ output:
       in_header: preamble.tex
 ---
 
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
+
+if(!require(pacman)) install.packages("pacman")
+library(pacman)
+
+pacman::p_load(
+  tidyverse,
+  knitr,
+  kableExtra
+)
+```
+
+
+
 \newpage
 # Informações preliminares {-}
 

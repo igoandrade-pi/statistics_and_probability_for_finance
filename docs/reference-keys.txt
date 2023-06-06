@@ -1,4 +1,6 @@
 comandos-básicos-para-programação-com-r
 laboratório-de-exercícios-1
 exercício-1
+exercício-2
+exercício-3
 a-caucus-race-and-a-long-tale
